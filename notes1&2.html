@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>This will appear on the tab</title>
+        <!-- 
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" 
+         integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        -->
+     
+    </head>
+    <body bgcolor = "lightblue">
+        <h1 id = "Contexts"> Contexts </h1>
+        <h2><a href = "#topsection">lecture 1</a></h2>
+        <h2><a href = "#topsection2">lecture 2</a></h2>
+        <hr />
+
+        <b><i>Welcome</i></b>
+        <hr />
+        <h1>Title</h1>
+        <h2>Subtitle</h2>
+        <h3>Topic</h3>
+        <h4>Subtopic</h4>
+
+        
+        <h1 id = "topsection" ><a href = "#Contexts">lecture One</a></h1>
+        <a href = "#tdimage"> <h1> Go to image</h1> </a>
+        <a href = "#external link examples"> <h1> Go to external link examples</h1> </a>
+        <p>
+            In addtion to <b> bold </b> and <i> italic </i>, you can also do <ins> insert </ins> and <del> delete </del>.
+            Sometimes you may need to <mark> highlight </mark> some texts, and remember that you should add a break element <br />
+            to add a newline 
+        </p>
+        <p>
+            <strong>Paragraph elements will insert an additional blank line between 2 paragraphs.</strong>.<br />
+            <strong>Strong</strong> seems similar to <b>bold</b>, but semantically, <strong>strong </strong> means the text is strong, but <b> b </b> doesn't. 
+            <br />
+            Similarly we can identify <em> em </em> from <i> i </i>.
+        </p>
+        <p>
+            There are also <small> small text </small>, <sup> superscript text </sup> and <sub> subscript text </sub>. 
+        </p>
+        <div>
+            DIV is a block-level element
+        </div>
+        <div>
+            Notice the text is rendered on new lines
+            <span>
+                SPAN is an inline element rendered on the same line
+            </span>
+            <span>This is another span</span>
+
+            <p>This is another paragraphs.</p>
+            <img id = "tdimage" src="images/Hangzhou.jpg" alt="Image displaying" width = "1000"/><br />
+            <a href = "#topsection"> <sub> back to top </sub> </a>
+        </div>
+
+        <p align = "right">
+            This part shows an example of formatting contexts using HTML, though nowadays we should avoid doing so but use CSS instead.
+            <br />
+            
+            You can also change the
+            <br />
+            <center> 
+            <font face = "Consoles" size = "62px" color = "orange">
+                font of the texts
+            </font>
+            </center> 
+        </p>
+        <p id = "external link examples">
+            HTML offers hyperlinks features that allow you to link to external webpages. Here are some examples: <br />
+            <br />
+            <a href = "http://www.edx.org" target = "_self" rel = "author">Edx course page replace the current tab</a>
+            <br />
+            <a href = "http://www.microsoft.com" target = "_blank" rel = "help">Microsoft page open in a new tab</a>
+            These <b>a</b> elements are <em>inline</em> elements 
+            <br />
+            <a href="http://www.microsoft.com" target="_blank" download = "download">http://www.microsoft.com This link will download the page </a>
+            <br />
+            <a href = "#topsection"> <sub> back to top </sub> </a>
+        </p>
+
+        <hr />
+        <h1 id = "topsection2"><a href="#Contexts">Lecture Two</a></h1>
+
+        <div>
+            <textarea rows="3" cols="30">These are default values of textareas, which is space sensitive.</textarea>
+            a breakline is required here
+            <br />
+            <select>
+                <optgroup label="Group name, not selectable">
+                    <option value="DAT202x">option name, selectable</option>
+                    <option value="DAT204x">Introduction to R Programming</option>
+                </optgroup>
+                <optgroup label="Cloud">
+                    <option value="CLD203x">Office 365: Managing Identities and Services</option>
+                </optgroup>
+                <optgroup label="Development">
+                    <option value="DEV208x">Introduction to jQuery</option>
+                </optgroup>
+            </select> 
+            lalala
+            <br />
+            <form ...>
+                Username: <input type="text" name="username" />
+                E-mail Address: <input type="email" name="emailaddress" />
+            </form>
+            A break is automatically added after a form.
+            <br />
+            <button type="button">
+                <img src="images/microsoft.jpg" alt="Microsoft" width = "100"/>
+                <br />
+                Apply to Microsoft!
+            </button>
+        </div>
+        <div>
+            <form method="GET">
+                <fieldset>
+                    <legend>Text Data</legend>
+                    First Name:<br />
+                    <input type="text" name="firstName" value="" placeholder="Enter your First Name here" /><br />
+                    Last Name:<br />
+                    <input type="text" name="lastName" value="" placeholder="Enter your Last Name here" /><br />
+                </fieldset>
+                <fieldset>
+                    <legend>Numeric Data</legend>
+                Age:<br />
+                <input type="range" name="age" min="0" max="100" value="25" /><br />
+                <br />
+                </fieldset>
+                <input type="submit" value="Click Me to Submit" />
+                <input type="reset" value= "Click Me to Reset" />
+            </form>
+        </div>
+
+        <div>
+            <form method="GET"> 
+                <fieldset>
+                    <legend>Application Form</legend>
+                    Full Name: <input name="fullName" type="text" required="required" placeholder="Enter your first name" />
+                    <br />
+                    Email Address: <input name="emailAddress" type="email" required="required" placeholder="Enter your e-mail address" />
+                    <br />
+                    Website: <input name="website" type="url" required="required" placeholder="Enter your website url" />
+                    <br />
+                </fieldset>
+                 <fieldset>
+                    <legend>Require Admin Approval</legend>
+                    Yes: <input type="radio" name="approval" value="true" checked="checked" />
+                    <br />
+                    No: <input type="radio" name="approval" value="false" />
+                </fieldset>
+                <input type="submit" value="Enroll" />
+               
+            </form>
+        </div>
+        <p>
+            Your next appointment is on
+            <time datetime="2015-12-13T08:30:00-05:00">
+                <strong>December 12th at 08:30 AM</strong>
+            </time>.
+            <br />
+            <b>Time</b> element itself doesn't have any formatting. 
+        </p>
+        <p>
+            <svg height="200" width="400">
+                <rect x="100" y="50" rx="20" ry="20" width="250" height="100" fill="#1B043C" />
+                <rect x="100" y="50" width="200" height="100" fill="#1B043C" />
+                <circle cx="100" cy="100" r="50" fill="#472772" />
+                <text fill="#D7BFF3" font-size="28" font-family="Segoe UI Light" x="160" y="108">CompanyName</text>
+            </svg>
+            <svg width="100" height="300">
+                <polygon points="5,5 65,5 95,195 35,195" stroke="#54523F" stroke-width="5" fill="#EBE3C5" />
+            </svg>
+        </p>
+        <p>
+            <!--
+            <video width="900" height="506" loop="loop" autoplay="autoplay">
+            -->
+            <video width="900" height="506" poster="images/video.png" controls="controls">
+                <source src="vid/fallback_sources_media.ogv" type="video/ogg" />
+                <source src="videos/mod2_video.mp4" type="video/mp4">
+                The video tag is not supported by your current browser.
+            </video>
+        </p>
+
+    </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+    <head>
+        <title>HTML Page</title>
+        <link rel = 'stylesheet' href="css/mod4_style.css"/>
+    </head>
+    <body>
+        <header id = "headerItem">
+            Old Header
+        </header>
+        <div>
+            <button onclick="clickHandler(doSomethingElse)">Click Here</button>
+        </div>
+        <div id= 'output'></div>
+
+
+        <p id="dateTarget"></p>
+        <button onclick='getElementById("dateTarget").innerHTML = Date()'>Get Current Time</button>
+        
+        <p id="dateTarget2"></p>
+        <button id="dateButton">Get Current Time2</button>
+        
+        <p id="dateTarget3"></p>
+        <button id="dateButton2">Get Current Time3</button>
+        
+        <dl>
+            <dt>Is the variable undefined?</dt>
+            <dd id="isUndefined"></dd>
+            <dt>Is the variable null?</dt>
+            <dd id="isNull"></dd>
+            <dt>Is the variable empty?</dt>
+            <dd id="isEmpty"></dd>
+        </dl>
+        <br />
+        <form>
+            <fieldset>
+                <legend>Text Value</legend>
+                Position: <input type="text" name="position" value="" />
+            </fieldset>
+            <fieldset>
+                <legend>Radio Value</legend>
+                <em>Department</em><br />
+                FIELD: <input type="radio" name="department" value="Field" checked="checked" /><br />
+                ITOPS: <input type="radio" name="department" value="IT Operations" /><br />
+                SALES: <input type="radio" name="department" value="Sales" /><br />
+                MGMT: <input type="radio" name="department" value="Management" />
+            </fieldset>
+            <button type="button" onclick="saveTextValue()">Save Text</button>
+            <button type="button" onclick="saveRadioValue()">Save Radio</button>
+        </form>
+
+
+        <section class="outermost">
+            <section class="regular">
+                <section class="innermost">
+                    Click Me!
+                </section>
+            </section>
+        </section>
+
+        <canvas id="demoCanvas" width="800" height="400">
+            Test Text
+        </canvas>
+
+        <br />
+        <button onclick="startWorker()">Start Worker</button>
+        <button onclick="stopWorker()">Stop Worker</button>
+        <ul id = "output1">
+        </ul>
+        <br />
+        <button type="button" onclick="testMessage()">Send Test Message to Echo</button>
+
+        <script type = "text/javascript"src="js/script.js">
+            // you can also add js scripts here
+        </script>
+
+    </body>
+</html>
