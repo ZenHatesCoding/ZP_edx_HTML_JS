@@ -1,0 +1,124 @@
+body {
+    background-color: #fbf8e5;
+    color: #6e7d9e;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+aside {
+background-color: #23354B;
+color: #CDB09E;
+padding: 25px;
+margin: 5px;
+}
+nav {
+display: flex;
+}
+nav > aside {
+flex: 1;
+}
+
+
+
+header {
+    background: linear-gradient(#051118, #5C373C);
+    color: #A5B7C5;
+    padding: 10px 20px;
+    margin: 20px 10px;
+    border: thick #CAA893 inset;
+}
+header > h1 {
+    letter-spacing: 5px;
+}
+article > h2 {
+    font-weight: bolder;
+}
+article > h2::before {
+    content: "\002329";
+    color: #F9C989;
+}
+article > h2::after {
+    content: "\00232A";
+    color: #F9C989;
+}
+
+
+@font-face {
+    font-family: Caveat; /*define your own font*/
+    src: url('../fonts/mod3_caveat.ttf')format('truetype');
+}
+
+@font-face {
+    font-family: Itim;
+    src: url('../fonts/mod3_itim.ttf')format('truetype');
+}
+
+
+
+/*select multiple element at the same time*/
+section, article {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    /*margin: 20px 10px*/
+    border: 1px black solid;
+    padding: 10px;
+    min-height: 60px;
+    font-family: "Itim";
+}
+
+/*class examples*/
+footer.style {
+    background-color: #A5B7C5;
+    padding: 5px 10px;
+    color: gold;
+    font-size: small;
+    text-align: center;
+}
+
+.grayBackground {
+    background-color: #F0F2F1;
+}
+
+.grayText {
+    color: #F0F2F1 !important;
+    /*w/o !important the text color won't be overwritten*/
+}
+
+
+
+footer.style > h1 {
+    font-family: 'Lucida Grande''Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /*secify multiple fonts until it is found in the browser*/
+}
+
+section.complexBorder {
+    border-width: 15px;
+    border-color: #F38630;
+    border-style: double ridge;
+}
+
+
+@media (max-width: 800px) {
+nav {
+    display: block;
+}
+}
+@media print {
+nav {
+    display: block;
+}
+body {
+    background-color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+}
+
+/*
+@media not print{
+    ...
+}
+
+@media all{
+    ...
+}
+*/
